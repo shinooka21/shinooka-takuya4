@@ -8,7 +8,7 @@
 </head>
 <body>
  <% 
- out.println("私は" ☐☐ "AxiZで " ☐☐ "研修を受けている。");
+ out.println("私は"+ "AxiZで "+ "研修を受けている。");
   %>
 </body>
 </html>
