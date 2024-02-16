@@ -9,7 +9,7 @@
 <body>
  <%
  String telNo = "0120-843-842";
- String[] x = {"0120","843","842"};
+ String[] x = telNo.split("-");
  out.println(x[0]);
  out.println(x[1]);
  out.println(x[2]);

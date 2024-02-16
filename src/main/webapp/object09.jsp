@@ -9,7 +9,7 @@
 <body>
  <%
  String no = "256";
- boolean bol = true;
+ boolean bol = no.matches("\\d{3}");
  out.println(bol);
  %>
 </body>

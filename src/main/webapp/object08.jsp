@@ -9,7 +9,7 @@
 <body>
  <% 
  String axiz =" A x i Z ";
- String x = axiz.replaceAll("\\s", "");
+ String x = axiz.trim();
  out.println(x);
  %>
 </body>
