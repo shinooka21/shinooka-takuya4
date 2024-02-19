@@ -1,0 +1,72 @@
+@charset "UTF-8";
+
+.index{
+	border: 3px solid royalblue;
+	text-align: center;
+	width: 500px;
+    padding: 10px;
+    box-sizing: border-box;
+    border-radius: 10px; 
+    margin: 0 auto;
+}
+
+h3{
+	text-align: center;
+	padding:10px 100px ;
+}
+
+input[type="submit"] {
+    background-color: royalblue; /* 背景色を水色に設定 */
+    color: white; /* 文字色を白に設定 */
+    padding: 10px 30px; /* パディングを追加してボタンを大きくする */
+    border-radius: 5px; /* 角を少し丸める */
+    cursor: pointer; /* カーソルをポインターに変更してクリッカブルであることを示す */
+}
+
+.nokori{
+	border: 3px solid royalblue;
+	text-align: center;
+	width: 500px;
+    padding: 10px;
+    box-sizing: border-box;
+    border-radius: 10px; 
+    margin: 0 auto;
+    margin-bottom:10px;
+}
+
+.kaeru{
+	 color: royalblue;
+}
+
+.player{
+	border: 3px solid royalblue;
+	text-align: center;
+	width: 500px;
+    padding: 10px;
+    box-sizing: border-box;
+    border-radius: 10px; 
+    margin: 0 auto;
+	
+}
+
+.finish{
+	border: 3px solid royalblue;
+	text-align: center;
+	width: 500px;
+    padding: 10px;
+    box-sizing: border-box;
+    border-radius: 10px; 
+    margin: 0 auto;
+}
+
+a.button {
+    display: inline-block;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    background-color:royalblue;
+    color: white;
+    border: 1px solid #ccc; /* ボーダーを追加 */
+    border-radius: 5px;
+    cursor: pointer;
+    }
