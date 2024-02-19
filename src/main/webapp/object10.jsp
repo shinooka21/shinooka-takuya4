@@ -9,7 +9,7 @@
 <body>
  <%
  String sentence = "I am studying Java";
- String x = sentence.replace(" ", "");
+ String x = sentence.replaceAll(" ", "\"\"");
  out.println(x);
  %>
 </body>
