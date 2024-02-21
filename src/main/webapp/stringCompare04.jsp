@@ -4,8 +4,9 @@
 <%
 String param1 = request.getParameter("param1");
 String param2 = request.getParameter("param2");
-boolean match = (param1 != null && param2 != null) && param1.matches(param2);
-
+//compareToは辞書式と呼びアルファベット順で文字列を比較。
+int comparisonResult = (param1 != null && param2 != null) ? param1.compareTo(param2) : -1; 
+boolean match = (comparisonResult == 0);
 %>
 <!DOCTYPE html>
 <html>
