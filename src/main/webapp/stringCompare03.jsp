@@ -4,7 +4,11 @@
 <%
 String param1 = request.getParameter("param1");
 String param2 = request.getParameter("param2");
-boolean match = (param1 != null && param2 != null) && param1.trim().equalsIgnoreCase(param2.trim());
+param1 = (param1 != null) ? param1.trim() : null;
+param2 = (param2 != null) ? param2.trim() : null;
+
+boolean match = (param1 == null && param2 == null) || 
+                (param1 != null && param2 != null && param1.equalsIgnoreCase(param2));
 %>
 <!DOCTYPE html>
 <html>
@@ -23,7 +27,7 @@ if (match) {
 }
 %>
 </p>
-<form action="stringCompare02.jsp" method="post">
+<form action="stringCompare03.jsp" method="post">
 <input type="text" name="param1">
 <input type="text" name="param2">
 <button type="submit">チェック</button>
