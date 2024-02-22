@@ -8,10 +8,10 @@
 </head>
 <body>
 <form action="" method="post">
-    <label><input type="radio" name="station" value="shinbashi"> 新橋</label>
-    <label><input type="radio" name="station" value="hamamatsucho"> 浜松町</label>
-    <label><input type="radio" name="station" value="tamachi"> 田町</label>
-    <label><input type="radio" name="station" value="shinagawa"> 品川</label>
+    <label><input type="radio" name="station" value="0"> 新橋</label>
+    <label><input type="radio" name="station" value="1"> 浜松町</label>
+    <label><input type="radio" name="station" value="2"> 田町</label>
+    <label><input type="radio" name="station" value="3"> 品川</label>
     <input type="submit" name="submit" value="決定">
 </form>
 
@@ -21,16 +21,16 @@ if (request.getMethod().equals("POST")) {
 
     if (station != null) {
         switch (station) {
-            case "shinbashi":
+            case "0":
                 out.println("東京まで有楽町を通過します");
                 break;
-            case "hamamatsucho":
+            case "1":
                 out.println("東京まで 新橋 有楽町 を通過します");
                 break;
-            case "tamachi":
+            case "2":
                 out.println("東京まで浜松町 新橋 有楽町 を通過します");
                 break;
-            case "shinagawa":
+            case "3":
                 out.println("東京まで田町 浜松町 新橋 有楽町 を通過します");
                 break;
             default:
