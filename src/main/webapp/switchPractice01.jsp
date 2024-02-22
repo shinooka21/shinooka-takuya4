@@ -8,9 +8,9 @@
 </head>
 <body>
 <form action="" method="post">
-    <label><input type="radio" name="color" value="red"> 赤</label>
-    <label><input type="radio" name="color" value="yellow"> 黄</label>
-    <label><input type="radio" name="color" value="blue"> 青</label>
+    <label><input type="radio" name="color" value="0"> 赤</label>
+    <label><input type="radio" name="color" value="1"> 黄</label>
+    <label><input type="radio" name="color" value="2"> 青</label>
     <input type="submit" name="submit" value="チェック">
 </form>
 
@@ -20,13 +20,13 @@ if (request.getMethod().equals("POST")) {
 
     if (color != null) {
         switch (color) {
-            case "red":
+            case "0":
                 out.println("赤ですね。進んではいけません。");
                 break;
-            case "yellow":
+            case "1":
                 out.println("黄ですね。止まってください。");
                 break;
-            case "blue":
+            case "2":
                 out.println("青ですね。進んでください。");
                 break;
             default:
