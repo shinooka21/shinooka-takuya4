@@ -8,8 +8,8 @@
 </head>
 <body>
 <%
-    for (int i = 1; i <= 4; i++) {
-        for (int j = 1; j <= i; j++) {
+    for (int i = 1; i <= 4; i++) {//行数
+        for (int j = 1; j <= i; j++) {//横の個数
 %>
             *
 <%
