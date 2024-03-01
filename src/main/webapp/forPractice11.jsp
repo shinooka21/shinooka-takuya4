@@ -10,54 +10,70 @@
 </head>
 <body>
 <%
-    int rows = 5;
+for (int i = 1; i <= 5; i++) {
+    out.print("*________*");
+    
+}
 
-    for (int m = 1; m <= 5; m++) {
+out.println("<br>");
+
+for (int i = 1; i <= 5; i++) {
+    out.print("**______**");
+
+}
+
+out.println("<br>");
+
+for (int i = 1; i <= 5; i++) {
+    out.print("***____***");
+    
+}
+
+out.println("<br>");
+
+for (int i = 1; i <= 5; i++) {
+    out.print("****__****");
+    
+}
+
+out.println("<br>");
+
+for (int i = 1; i <= 5; i++) {
+    out.print("**********");
+    
+}
+
+out.println("<br>");
+
+ 
+for (int i = 1; i <= 5; i++) {
+    out.print("****__****");
+    
+}
+
+out.println("<br>");
+
+for (int i = 1; i <= 5; i++) {
+    out.print("***____***");
+    
+}
+
+out.println("<br>");
+
+for (int i = 1; i <= 5; i++) {
+    out.print("**______**");
+    
+}
+
+out.println("<br>");
+
+for (int i = 1; i <= 5; i++) {
+    out.print("*________*");
+    
+}
+
+out.println("<br>");
+
 %>
-        <div style="display: inline-block;">
-<%
-        for (int i = 1; i <= rows; i++) {
-            // 左側の星
-            for (int j = 1; j <= i; j++) {
-                out.print("*");
-            }
-
-            // 右側の空白
-            for (int k = 1; k <= rows - i; k++) {
-                out.print("&nbsp;&nbsp;&nbsp;");
-            }
-
-            // 右側の星
-            for (int l = 1; l <= i; l++) {
-                out.print("*");
-            }
-
-            out.println("<br>");
-        }
-
-        for (int i = rows - 1; i >= 1; i--) {
-            // 左側の星
-            for (int j = 1; j <= i; j++) {
-                out.print("*");
-            }
-
-            // 右側の空白
-            for (int k = 1; k <= rows - i; k++) {
-                out.print("&nbsp;&nbsp;&nbsp;");
-            }
-
-            // 右側の星
-            for (int l = 1; l <= i; l++) {
-                out.print("*");
-            }
-
-            out.println("<br>");
-        }
-%>
-        </div>
-<%
-    }
-%>
-</div>
 </body>
 </html>
