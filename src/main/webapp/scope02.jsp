@@ -21,7 +21,7 @@ if (request.getParameter("clicked") != null) {
 }
 //クリアボタンで1にリセット
 if (request.getParameter("clearClicked") != null) {
- count = 1;
+ count = 0;
  session.setAttribute("clickCount", count);
 }
 %>
