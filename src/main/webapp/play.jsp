@@ -9,7 +9,7 @@
 int totalNum;
 String currentPlayer;
 
-// セッションから情報を取得するか、初回またはゲーム終了時の場合は初期化
+// セッションから情報を取得するか、初回、ゲーム終了時のときは初期化
 if (session.getAttribute("totalNum") == null || session.getAttribute("gameOver") != null) {
     totalNum = 25;
     currentPlayer = "A";
