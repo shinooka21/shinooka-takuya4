@@ -1,7 +1,7 @@
 package stone1;
 
 public class Utility {
-	public static String getStoneDisplayHtml(int totalNum) {
+    public static String getStoneDisplayHtml(int totalNum) {
         StringBuilder stoneDisplayHtml = new StringBuilder();
 
         for (int i = 0; i < totalNum; i++) {
@@ -14,5 +14,4 @@ public class Utility {
 
         return stoneDisplayHtml.toString();
     }
-
 }
