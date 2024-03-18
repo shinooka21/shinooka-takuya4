@@ -5,6 +5,12 @@
 <head>
 <meta charset="UTF-8">
 <title>Insert title here</title>
+<script>
+    function sanitizeInput(input) {
+        // 入力値をすべてエスケープするため追加
+        return input.replace(/</g, "&lt;").replace(/>/g, "&gt;");
+    }
+</script>
 </head>
 <body>
 <form action="ElPractice04" method="post">

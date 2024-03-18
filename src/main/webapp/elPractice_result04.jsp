@@ -1,5 +1,7 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
+    <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+    <%@ taglib prefix="fn" uri="http://java.sun.com/jsp/jstl/functions" %>
 <!DOCTYPE html>
 <html>
 <head>
@@ -8,6 +10,7 @@
 </head>
 <body>
 以下のメッセージが届きました 
-<p>${userInput}</p>
+<p>${fn:escapeXml(requestScope.userInput)}</p>
+<%-- functionは主に文字列の操作 --%>
 </body>
 </html>
